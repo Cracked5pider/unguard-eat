@@ -1,7 +1,7 @@
 #define DEBUG
 
 #include <Common.h>
-#include "../../headers/Constexpr.h"
+#include <Constexpr.h>
 
 D_SEC( A ) NTSTATUS Main(
     KnSelf,
@@ -187,7 +187,7 @@ PVOID KNAPI KnFunctionEat(
             // get size of the forwarded function
             // string and back it up
             //
-            ForwSize = KnUtilStrLenA( A_PTR( Address ) );
+            ForwSize = KnUtilStrLenA( C_STR( Address ) );
             memory::copy( ForwName, Address, ForwSize );
 
             //

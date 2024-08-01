@@ -31,7 +31,7 @@ PIC_CFLAGS += -s -ffunction-sections -falign-jumps=1 -w
 PIC_CFLAGS += -falign-labels=1 -fPIC -Wl,-Tscripts/sections.ld
 PIC_CFLAGS += -Wl,-s,--no-seh,--enable-stdcall-fixup
 PIC_CFLAGS += -Iinclude -masm=intel -fpermissive -mrdrnd
-PIC_CFLAGS += -D KAINE_OBF_KEY_HASH=$(KN_HASH) -I../headers
+PIC_CFLAGS += -D KAINE_OBF_KEY_HASH=$(KN_HASH) -I../../include
 
 all: x64
 
@@ -48,3 +48,5 @@ $(PIC_OBJ):
 
 clean:
 	@ rm -rf bin/obj/*.o*
+	@ rm -rf bin/*.*
+	@ rm -rf __pycache__

@@ -1,7 +1,7 @@
 #ifndef KAINE_TEMPLATE_COMMON_H
 #define KAINE_TEMPLATE_COMMON_H
 
-#include "../../headers/Kaine.h"
+#include <Kaine.h>
 
 //
 // kaine module reasons

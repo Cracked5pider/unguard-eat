@@ -1,6 +1,6 @@
 {
     "name"        : "unguard-eat",
-    "categories"  : [""],
+    "categories"  : ["evasion", "kaine"],
     "version"     : 0.1,
     "license"     : "",
     "description" : "havoc kaine plugin to mitigate PAGE_GUARD protected image headers using JOP gadgets",

@@ -1,5 +1,6 @@
 {
     "name"        : "unguard-eat",
+    "plugin_id"   : "dev.5pider.unguard-eat",
     "categories"  : ["evasion", "kaine"],
     "version"     : 0.1,
     "license"     : "",

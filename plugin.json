@@ -5,7 +5,7 @@
     "license"     : "",
     "description" : "havoc kaine plugin to mitigate PAGE_GUARD protected image headers using JOP gadgets",
     "readme"      : "",
-    "readme_url"  : "https://raw.githubusercontent.com/Cracked5pider/unguard-eat/main/Readme.md",
+    "readme_path" : "Readme.md",
     "author"      : {
         "name"    : "5pider",
         "url"     : "https://x.com/C5pider"

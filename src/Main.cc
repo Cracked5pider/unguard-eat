@@ -142,7 +142,7 @@ PVOID KNAPI KnFunctionEat(
     //
     // parse the header export address table
     //
-    NtHeader   = PIMG_NT_HDR ( U_PTR( Library  ) + U_32( KnUnguardPtr( U_PTR( Library ) + FIELD_OFFSET( IMAGE_DOS_HEADER, e_lfanew ), Gadget ) ) );
+    NtHeader   = PIMG_NT_HDR ( U_PTR( Library  ) + U_32( KnUnguardPtr( U_PTR( Library  ) + FIELD_OFFSET( IMAGE_DOS_HEADER, e_lfanew ), Gadget ) ) );
     ExpDir     = PIMG_EXP_DIR( U_PTR( Library  ) + U_32( KnUnguardPtr( U_PTR( NtHeader ) + FIELD_OFFSET( IMAGE_NT_HEADERS, OptionalHeader.DataDirectory ), Gadget ) ) );
     ExpDirSize = U_32( KnUnguardPtr( U_PTR( NtHeader ) + FIELD_OFFSET( IMAGE_NT_HEADERS, OptionalHeader.DataDirectory ) + sizeof( ULONG ), Gadget ) );
 
